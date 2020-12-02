@@ -16,10 +16,6 @@ const validPart1Passwords = lines.filter((line) => passwordIsValidPart1(line));
 
 console.log(`Number of valid passwords: ${validPart1Passwords.length}`);
 
-const xor = (a, b, char) => {
-  return a != b;
-};
-
 const passwordIsValidPart2 = (line) => {
   const [rule, password] = line.split(": ");
 
