@@ -46,7 +46,6 @@ const reduceStep = (depth, curSum, tarSum, values, used) => {
   return ret;
 };
 
-// n = number of entires that should equal to s in list l
 const findNumbers = (numEntries, tarSum, values) =>
   reduceStep(numEntries, 0, tarSum, values, []);
 
